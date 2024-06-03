@@ -1,0 +1,33 @@
+!!!SBtab DocumentName='report' SBtabVersion='1.0' Date='2024-5-6'
+!!SBtab TableID='Predicted concentrations' TableType='Quantity' TableName='Predicted concentrations' SBtabVersion='1.0' Unit='M'
+!QuantityType	!Compound	!Value
+concentration	Acetyl_CoA	3.284e-05
+concentration	H2O	1.000e+00
+concentration	Oxaloacetate	1.000e-06
+concentration	Citrate	2.865e-03
+concentration	Coenzyme_A	1.000e-03
+concentration	Cis_Aconitate	2.145e-05
+concentration	threo_isocitric_acid	5.590e-06
+concentration	Glyoxylate	2.849e-05
+concentration	Succinate	1.163e-04
+concentration	14_benzoquinones	1.485e-04
+concentration	Fumarate	7.882e-03
+concentration	Hydroquinone	6.732e-05
+concentration	L_Malate	1.000e-02
+concentration	Nicotinamide_adenine_dinucleotide	1.000e-03
+concentration	Nicotinamide_adenine_dinucleotide_reduced	1.000e-04
+concentration	CO2	1.000e-05
+concentration	Pyruvate	5.750e-04
+
+!!SBtab TableID='Predicted Gibbs energies' TableType='Quantity' TableName='Predicted Gibbs energies' SBtabVersion='1.0' Unit='kJ/mol'
+!QuantityType	!Reaction	!Value
+reaction gibbs energy	R00000	-1.057e+01
+reaction gibbs energy	R00001	-3.657e+00
+reaction gibbs energy	R00002	-4.152e+00
+reaction gibbs energy	R00003	-9.680e+00
+reaction gibbs energy	R00004	-9.295e+00
+reaction gibbs energy	R00005	-2.830e+00
+reaction gibbs energy	R00006	-2.025e+00
+reaction gibbs energy	R00007	-1.567e+01
+reaction gibbs energy	R00008	-2.921e+01
+

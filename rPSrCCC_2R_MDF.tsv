@@ -1,0 +1,93 @@
+!!!SBtab DocumentName='pathway' SBtabVersion='1.0' Date='2024-5-9'
+!!SBtab TableID='Configuration' TableType='Config' TableName='Configuration' SBtabVersion='1.0'
+!Option	!Value	!Comment
+p_h	7.5 dimensionless	
+p_mg	3.0 dimensionless	
+ionic_strength	0.25 molar	
+temperature	298.15 kelvin	
+
+!!SBtab TableID='Reaction' TableType='Reaction' TableName='Reaction' SBtabVersion='1.0'
+!ID	!ReactionFormula
+R00000	2 Acetyl_CoA = Acetoacetyl_CoA + Coenzyme_A
+R00001	Acetoacetyl_CoA + Nicotinamide_adenine_dinucleotide_reduced = 3R_3_Hydroxybutanoyl_CoA + Nicotinamide_adenine_dinucleotide
+R00002	3R_3_Hydroxybutanoyl_CoA = Crotonoyl_CoA + H2O
+R00003	CO2 + Crotonoyl_CoA + Nicotinamide_adenine_dinucleotide_phosphate_reduced = 2S_2_ethylmalonyl_CoA + Nicotinamide_adenine_dinucleotide_phosphate
+R00004	2S_2_ethylmalonyl_CoA = 2R_ethylmalonyl_CoA
+R00005	2R_ethylmalonyl_CoA = 2S_methylsuccinyl_CoA
+R00006	14_benzoquinones + 2S_methylsuccinyl_CoA = 2_methylfumaroyl_CoA + Hydroquinone
+R00007	2_methylfumaroyl_CoA = 3_phosphonatoadenosine_5_3_3R_4_3_2_2E_3_carboxy_3_methylprop_2_enoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_diphosphate
+R00008	3_phosphonatoadenosine_5_3_3R_4_3_2_2E_3_carboxy_3_methylprop_2_enoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_diphosphate + H2O = 3_phosphoadenosine_5_3_3R_4_3_2_3_carboxy_3_hydroxybutanoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_dihydrogen_diphosphate
+R00009	3_phosphoadenosine_5_3_3R_4_3_2_3_carboxy_3_hydroxybutanoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_dihydrogen_diphosphate = Acetyl_CoA + Pyruvate
+
+!!SBtab TableID='Compound' TableType='Compound' TableName='Compound' SBtabVersion='1.0'
+!ID	!Name	!Identifiers
+H2O	H2O	metanetx.chemical:MNXM2
+Nicotinamide_adenine_dinucleotide_phosphate	Nicotinamide adenine dinucleotide phosphate	metanetx.chemical:MNXM5
+Nicotinamide_adenine_dinucleotide_phosphate_reduced	Nicotinamide adenine dinucleotide phosphate - reduced	metanetx.chemical:MNXM6
+Nicotinamide_adenine_dinucleotide	Nicotinamide adenine dinucleotide	metanetx.chemical:MNXM8
+Nicotinamide_adenine_dinucleotide_reduced	Nicotinamide adenine dinucleotide - reduced	metanetx.chemical:MNXM10
+Coenzyme_A	Coenzyme A	metanetx.chemical:MNXM12
+CO2	CO2	metanetx.chemical:MNXM13
+Acetyl_CoA	Acetyl-CoA	metanetx.chemical:MNXM21
+Pyruvate	Pyruvate	metanetx.chemical:MNXM23
+Acetoacetyl_CoA	Acetoacetyl-CoA	metanetx.chemical:MNXM133
+Crotonoyl_CoA	Crotonoyl-CoA	metanetx.chemical:MNXM214
+Hydroquinone	Hydroquinone	metanetx.chemical:MNXM376
+14_benzoquinones	1,4-benzoquinones	metanetx.chemical:MNXM769
+3R_3_Hydroxybutanoyl_CoA	(3R)-3-Hydroxybutanoyl-CoA	metanetx.chemical:MNXM1058
+2S_2_ethylmalonyl_CoA	(2S)-2-ethylmalonyl-CoA	metanetx.chemical:MNXM2043
+3_phosphoadenosine_5_3_3R_4_3_2_3_carboxy_3_hydroxybutanoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_dihydrogen_diphosphate	3'-phosphoadenosine 5'-{3-[(3R)-4-{[3-({2-[(3-carboxy-3-hydroxybutanoyl)sulfanyl]ethyl}amino)-3-oxopropyl]amino}-3-hydroxy-2,2-dimethyl-4-oxobutyl] dihydrogen diphosphate}	metanetx.chemical:MNXM2358
+2_methylfumaroyl_CoA	2-methylfumaroyl-CoA	metanetx.chemical:MNXM2693
+2S_methylsuccinyl_CoA	(2S)-methylsuccinyl-CoA	metanetx.chemical:MNXM5823
+3_phosphonatoadenosine_5_3_3R_4_3_2_2E_3_carboxy_3_methylprop_2_enoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_diphosphate	3'-phosphonatoadenosine 5'-{3-[(3R)-4-({3-[(2-{[(2E)-3-carboxy-3-methylprop-2-enoyl]sulfanyl}ethyl)amino]-3-oxopropyl}amino)-3-hydroxy-2,2-dimethyl-4-oxobutyl] diphosphate}	metanetx.chemical:MNXM12237
+2R_ethylmalonyl_CoA	(2R)-ethylmalonyl-CoA	metanetx.chemical:MNXM9406
+
+!!SBtab TableID='Thermodynamics' TableType='Quantity' TableName='Thermodynamics' SBtabVersion='1.0' StandardConcentration='M'
+!QuantityType	!Reaction	!Compound	!Value	!Unit
+reaction gibbs energy	R00000		24.97	kJ/mol
+reaction gibbs energy	R00001		-14.29	kJ/mol
+reaction gibbs energy	R00002		3.72	kJ/mol
+reaction gibbs energy	R00003		-39.79	kJ/mol
+reaction gibbs energy	R00004		0.00	kJ/mol
+reaction gibbs energy	R00005		0.00	kJ/mol
+reaction gibbs energy	R00006		-22.97	kJ/mol
+reaction gibbs energy	R00007		0.00	kJ/mol
+reaction gibbs energy	R00008		-0.40	kJ/mol
+reaction gibbs energy	R00009		7.07	kJ/mol
+
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' TableName='ConcentrationConstraint' SBtabVersion='1.0' Unit='mM'
+!QuantityType	!Compound	!Min	!Max
+concentration	H2O	1e+03	1e+03
+concentration	Nicotinamide_adenine_dinucleotide_phosphate	0.01	0.01
+concentration	Nicotinamide_adenine_dinucleotide_phosphate_reduced	0.1	0.1
+concentration	Nicotinamide_adenine_dinucleotide	1	1
+concentration	Nicotinamide_adenine_dinucleotide_reduced	0.1	0.1
+concentration	Coenzyme_A	1	1
+concentration	CO2	0.01	0.01
+concentration	Acetyl_CoA	0.001	10
+concentration	Pyruvate	0.001	10
+concentration	Acetoacetyl_CoA	0.001	10
+concentration	Crotonoyl_CoA	0.001	10
+concentration	Hydroquinone	0.001	10
+concentration	14_benzoquinones	0.001	10
+concentration	3R_3_Hydroxybutanoyl_CoA	0.001	10
+concentration	2S_2_ethylmalonyl_CoA	0.001	10
+concentration	3_phosphoadenosine_5_3_3R_4_3_2_3_carboxy_3_hydroxybutanoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_dihydrogen_diphosphate	0.001	10
+concentration	2_methylfumaroyl_CoA	0.001	10
+concentration	2S_methylsuccinyl_CoA	0.001	10
+concentration	3_phosphonatoadenosine_5_3_3R_4_3_2_2E_3_carboxy_3_methylprop_2_enoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_diphosphate	0.001	10
+concentration	2R_ethylmalonyl_CoA	0.001	10
+
+!!SBtab TableID='Flux' TableType='Quantity' TableName='Flux' SBtabVersion='1.0' Unit='dimensionless'
+!QuantityType	!Reaction	!Value
+rate of reaction	R00000	1
+rate of reaction	R00001	1
+rate of reaction	R00002	1
+rate of reaction	R00003	1
+rate of reaction	R00004	1
+rate of reaction	R00005	1
+rate of reaction	R00006	1
+rate of reaction	R00007	1
+rate of reaction	R00008	1
+rate of reaction	R00009	1
+

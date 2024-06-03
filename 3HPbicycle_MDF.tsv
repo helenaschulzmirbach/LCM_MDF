@@ -1,0 +1,111 @@
+!!!SBtab DocumentName='pathway' SBtabVersion='1.0' Date='2024-5-9'
+!!SBtab TableID='Configuration' TableType='Config' TableName='Configuration' SBtabVersion='1.0'
+!Option	!Value	!Comment
+p_h	7.5 dimensionless	
+p_mg	3.0 dimensionless	
+ionic_strength	0.25 molar	
+temperature	298.15 kelvin	
+
+!!SBtab TableID='Reaction' TableType='Reaction' TableName='Reaction' SBtabVersion='1.0'
+!ID	!ReactionFormula
+R00000	ATP + Acetyl_CoA + CO2 + H2O = ADP + Malonyl_CoA + Phosphate
+R00001	Malonyl_CoA + Nicotinamide_adenine_dinucleotide_phosphate_reduced = Coenzyme_A + Malonate_semialdehyde + Nicotinamide_adenine_dinucleotide_phosphate
+R00002	Malonate_semialdehyde + Nicotinamide_adenine_dinucleotide_phosphate_reduced = 3_Hydroxypropanoate + Nicotinamide_adenine_dinucleotide_phosphate
+R00003	3_Hydroxypropanoate + Succinyl_CoA = 3hpcoa + Succinate
+R00004	3hpcoa = Acrylyl_CoA + H2O
+R00005	Acrylyl_CoA + Nicotinamide_adenine_dinucleotide_phosphate_reduced = Nicotinamide_adenine_dinucleotide_phosphate + Propanoyl_CoA
+R00006	ATP + CO2 + H2O + Propanoyl_CoA = ADP + Phosphate + S_Methylmalonyl_CoA
+R00007	S_Methylmalonyl_CoA = R_Methylmalonyl_CoA
+R00008	R_Methylmalonyl_CoA = Succinyl_CoA
+R00009	14_benzoquinones + Succinate = Fumarate + Hydroquinone
+R00010	Fumarate + H2O = L_Malate
+R00011	L_Malate + Nicotinamide_adenine_dinucleotide = CO2 + Nicotinamide_adenine_dinucleotide_reduced + Pyruvate
+
+!!SBtab TableID='Compound' TableType='Compound' TableName='Compound' SBtabVersion='1.0'
+!ID	!Name	!Identifiers
+H2O	H2O	metanetx.chemical:MNXM2
+ATP	ATP	metanetx.chemical:MNXM3
+Nicotinamide_adenine_dinucleotide_phosphate	Nicotinamide adenine dinucleotide phosphate	metanetx.chemical:MNXM5
+Nicotinamide_adenine_dinucleotide_phosphate_reduced	Nicotinamide adenine dinucleotide phosphate - reduced	metanetx.chemical:MNXM6
+ADP	ADP	metanetx.chemical:MNXM7
+Nicotinamide_adenine_dinucleotide	Nicotinamide adenine dinucleotide	metanetx.chemical:MNXM8
+Phosphate	Phosphate	metanetx.chemical:MNXM9
+Nicotinamide_adenine_dinucleotide_reduced	Nicotinamide adenine dinucleotide - reduced	metanetx.chemical:MNXM10
+Coenzyme_A	Coenzyme A	metanetx.chemical:MNXM12
+CO2	CO2	metanetx.chemical:MNXM13
+Acetyl_CoA	Acetyl-CoA	metanetx.chemical:MNXM21
+Pyruvate	Pyruvate	metanetx.chemical:MNXM23
+Succinate	Succinate	metanetx.chemical:MNXM25
+Malonyl_CoA	Malonyl-CoA	metanetx.chemical:MNXM40
+Propanoyl_CoA	Propanoyl-CoA	metanetx.chemical:MNXM86
+Succinyl_CoA	Succinyl-CoA	metanetx.chemical:MNXM92
+Fumarate	Fumarate	metanetx.chemical:MNXM93
+L_Malate	L-Malate	metanetx.chemical:MNXM98
+Malonate_semialdehyde	Malonate semialdehyde	metanetx.chemical:MNXM244
+Hydroquinone	Hydroquinone	metanetx.chemical:MNXM376
+R_Methylmalonyl_CoA	(R)-Methylmalonyl-CoA	metanetx.chemical:MNXM608
+Acrylyl_CoA	Acrylyl CoA	metanetx.chemical:MNXM650
+14_benzoquinones	1,4-benzoquinones	metanetx.chemical:MNXM769
+3_Hydroxypropanoate	3-Hydroxypropanoate	metanetx.chemical:MNXM872
+3hpcoa	3hpcoa	metanetx.chemical:MNXM1263
+S_Methylmalonyl_CoA	(S)-Methylmalonyl-CoA	metanetx.chemical:MNXM81312
+
+!!SBtab TableID='Thermodynamics' TableType='Quantity' TableName='Thermodynamics' SBtabVersion='1.0' StandardConcentration='M'
+!QuantityType	!Reaction	!Compound	!Value	!Unit
+reaction gibbs energy	R00000		-17.15	kJ/mol
+reaction gibbs energy	R00001		12.84	kJ/mol
+reaction gibbs energy	R00002		-20.41	kJ/mol
+reaction gibbs energy	R00003		13.90	kJ/mol
+reaction gibbs energy	R00004		-2.30	kJ/mol
+reaction gibbs energy	R00005		-57.51	kJ/mol
+reaction gibbs energy	R00006		-13.07	kJ/mol
+reaction gibbs energy	R00007		0.16	kJ/mol
+reaction gibbs energy	R00008		-8.36	kJ/mol
+reaction gibbs energy	R00009		-17.78	kJ/mol
+reaction gibbs energy	R00010		-3.42	kJ/mol
+reaction gibbs energy	R00011		12.10	kJ/mol
+
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' TableName='ConcentrationConstraint' SBtabVersion='1.0' Unit='mM'
+!QuantityType	!Compound	!Min	!Max
+concentration	H2O	1e+03	1e+03
+concentration	ATP	5	5
+concentration	Nicotinamide_adenine_dinucleotide_phosphate	0.01	0.01
+concentration	Nicotinamide_adenine_dinucleotide_phosphate_reduced	0.1	0.1
+concentration	ADP	0.5	0.5
+concentration	Nicotinamide_adenine_dinucleotide	1	1
+concentration	Phosphate	10	10
+concentration	Nicotinamide_adenine_dinucleotide_reduced	0.1	0.1
+concentration	Coenzyme_A	1	1
+concentration	CO2	0.01	0.01
+concentration	Acetyl_CoA	0.001	10
+concentration	Pyruvate	0.001	10
+concentration	Succinate	0.001	10
+concentration	Malonyl_CoA	0.001	10
+concentration	Propanoyl_CoA	0.001	10
+concentration	Succinyl_CoA	0.001	10
+concentration	Fumarate	0.001	10
+concentration	L_Malate	0.001	10
+concentration	Malonate_semialdehyde	0.001	10
+concentration	Hydroquinone	0.001	10
+concentration	R_Methylmalonyl_CoA	0.001	10
+concentration	Acrylyl_CoA	0.001	10
+concentration	14_benzoquinones	0.001	10
+concentration	3_Hydroxypropanoate	0.001	10
+concentration	3hpcoa	0.001	10
+concentration	S_Methylmalonyl_CoA	0.001	10
+
+!!SBtab TableID='Flux' TableType='Quantity' TableName='Flux' SBtabVersion='1.0' Unit='dimensionless'
+!QuantityType	!Reaction	!Value
+rate of reaction	R00000	1
+rate of reaction	R00001	1
+rate of reaction	R00002	1
+rate of reaction	R00003	1
+rate of reaction	R00004	1
+rate of reaction	R00005	1
+rate of reaction	R00006	1
+rate of reaction	R00007	1
+rate of reaction	R00008	1
+rate of reaction	R00009	1
+rate of reaction	R00010	1
+rate of reaction	R00011	1
+

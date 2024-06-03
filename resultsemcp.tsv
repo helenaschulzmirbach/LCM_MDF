@@ -1,0 +1,56 @@
+!!!SBtab DocumentName='report' SBtabVersion='1.0' Date='2024-5-9'
+!!SBtab TableID='Predicted concentrations' TableType='Quantity' TableName='Predicted concentrations' SBtabVersion='1.0' Unit='M'
+!QuantityType	!Compound	!Value
+concentration	Acetyl_CoA	1.000e-02
+concentration	Acetoacetyl_CoA	1.353e-06
+concentration	Coenzyme_A	1.000e-03
+concentration	Nicotinamide_adenine_dinucleotide_reduced	1.000e-04
+concentration	3R_3_Hydroxybutanoyl_CoA	1.393e-05
+concentration	Nicotinamide_adenine_dinucleotide	1.000e-03
+concentration	Crotonoyl_CoA	1.000e-06
+concentration	H2O	1.000e+00
+concentration	CO2	1.000e-05
+concentration	Nicotinamide_adenine_dinucleotide_phosphate_reduced	1.000e-04
+concentration	2S_2_ethylmalonyl_CoA	1.282e-04
+concentration	Nicotinamide_adenine_dinucleotide_phosphate	1.000e-05
+concentration	2R_ethylmalonyl_CoA	2.121e-05
+concentration	2S_methylsuccinyl_CoA	3.275e-06
+concentration	14_benzoquinones	1.207e-04
+concentration	2_methylfumaroyl_CoA	1.296e-03
+concentration	Hydroquinone	8.282e-05
+concentration	L_erythro_3_methylmalyl_CoA	3.730e-05
+concentration	Glyoxylate	2.048e-05
+concentration	Propanoyl_CoA	3.556e-04
+concentration	ATP	5.000e-03
+concentration	ADP	5.000e-04
+concentration	Phosphate	1.000e-02
+concentration	S_Methylmalonyl_CoA	8.141e-05
+concentration	R_Methylmalonyl_CoA	8.441e-06
+concentration	Succinyl_CoA	7.078e-06
+concentration	Succinate	3.725e-04
+concentration	Fumarate	6.036e-04
+concentration	L_Malate	9.160e-05
+concentration	Pyruvate	2.888e-04
+concentration	3S_3_Carboxy_3_hydroxypropanoyl_CoA	6.455e-06
+
+!!SBtab TableID='Predicted Gibbs energies' TableType='Quantity' TableName='Predicted Gibbs energies' SBtabVersion='1.0' Unit='kJ/mol'
+!QuantityType	!Reaction	!Value
+reaction gibbs energy	R00000	-2.807e+00
+reaction gibbs energy	R00001	-2.807e+00
+reaction gibbs energy	R00002	-2.807e+00
+reaction gibbs energy	R00003	-4.944e+00
+reaction gibbs energy	R00004	-4.458e+00
+reaction gibbs energy	R00005	-4.629e+00
+reaction gibbs energy	R00006	-9.086e+00
+reaction gibbs energy	R00007	-5.101e+00
+reaction gibbs energy	R00008	-6.101e+00
+reaction gibbs energy	R00009	-5.313e+00
+reaction gibbs energy	R00010	-5.455e+00
+reaction gibbs energy	R00011	-8.796e+00
+reaction gibbs energy	R00012	-3.573e+01
+reaction gibbs energy	R00013	-1.752e+01
+reaction gibbs energy	R00014	-8.092e+00
+reaction gibbs energy	R00015	-1.928e+01
+reaction gibbs energy	R00016	-7.621e+00
+reaction gibbs energy	R00017	-3.302e+01
+

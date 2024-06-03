@@ -1,0 +1,37 @@
+!!!SBtab DocumentName='report' SBtabVersion='1.0' Date='2024-5-9'
+!!SBtab TableID='Predicted concentrations' TableType='Quantity' TableName='Predicted concentrations' SBtabVersion='1.0' Unit='M'
+!QuantityType	!Compound	!Value
+concentration	Acetyl_CoA	1.000e-02
+concentration	Acetoacetyl_CoA	1.353e-06
+concentration	Coenzyme_A	1.000e-03
+concentration	Nicotinamide_adenine_dinucleotide_reduced	1.000e-04
+concentration	3R_3_Hydroxybutanoyl_CoA	1.393e-05
+concentration	Nicotinamide_adenine_dinucleotide	1.000e-03
+concentration	Crotonoyl_CoA	1.000e-06
+concentration	H2O	1.000e+00
+concentration	CO2	1.000e-05
+concentration	Nicotinamide_adenine_dinucleotide_phosphate_reduced	1.000e-04
+concentration	2S_2_ethylmalonyl_CoA	2.821e-04
+concentration	Nicotinamide_adenine_dinucleotide_phosphate	1.000e-05
+concentration	2R_ethylmalonyl_CoA	4.336e-05
+concentration	2S_methylsuccinyl_CoA	5.647e-06
+concentration	14_benzoquinones	1.051e-04
+concentration	2_methylfumaroyl_CoA	1.472e-03
+concentration	Hydroquinone	9.511e-05
+concentration	3_phosphonatoadenosine_5_3_3R_4_3_2_2E_3_carboxy_3_methylprop_2_enoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_diphosphate	1.692e-04
+concentration	3_phosphoadenosine_5_3_3R_4_3_2_3_carboxy_3_hydroxybutanoyl_sulfanyl_ethyl_amino_3_oxopropyl_amino_3_hydroxy_22_dimethyl_4_oxobutyl_dihydrogen_diphosphate	2.489e-05
+concentration	Pyruvate	1.051e-05
+
+!!SBtab TableID='Predicted Gibbs energies' TableType='Quantity' TableName='Predicted Gibbs energies' SBtabVersion='1.0' Unit='kJ/mol'
+!QuantityType	!Reaction	!Value
+reaction gibbs energy	R00000	-2.807e+00
+reaction gibbs energy	R00001	-2.807e+00
+reaction gibbs energy	R00002	-2.807e+00
+reaction gibbs energy	R00003	-2.991e+00
+reaction gibbs energy	R00004	-4.640e+00
+reaction gibbs energy	R00005	-5.050e+00
+reaction gibbs energy	R00006	-9.436e+00
+reaction gibbs energy	R00007	-5.359e+00
+reaction gibbs energy	R00008	-5.148e+00
+reaction gibbs energy	R00009	-6.476e+00
+

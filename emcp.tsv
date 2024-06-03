@@ -1,0 +1,21 @@
+!!!SBtab DocumentName='Pathway Model' SBtabVersion='1.0'	
+!!SBtab TableName='Reaction' TableID='Reaction' TableType='Reaction'  	
+!ReactionFormula	!RelativeFlux
+2 acetyl-coA <=> acetoacetyl-CoA + CoA	1
+Acetoacetyl-CoA + NADH <=> 3-Hydroxybutyryl-CoA + NAD 	1
+3-Hydroxybutyryl-CoA <=> Crotonyl-CoA + H2O	1
+Crotonyl-CoA + CO2 + NADPH <=> s-2-Ethylmalonyl-CoA + NADP	1
+s-2-ethylmalonyl-CoA  <=> (2r)-ethylmalonyl-CoA	1
+(2r)-ethylmalonyl-CoA <=> Methylsuccinyl-CoA	1
+methylsuccinyl-coA  + quinone <=> mesaconyl-c1-coA + quinol	1
+mesaconyl-CoA + h2o <=> beta-methylmalyl-coA	1
+beta-methylmalyl-CoA <=> propionyl-CoA + glyoxylate	1
+Propionyl-CoA + atp + h2o + co2 <=> s-methylmalonyl-CoA + adp + orthophosphate	1
+s-methylmalonyl-CoA <=> r-methylmalonyl-CoA	1
+r-methylmalonyl-CoA <=> succinyl-coA	1
+Succinyl-CoA + H2O <=> Succinate + CoA	1
+succinate + quinone <=> fumarate + Quinol	1
+H2O + Fumarate <=> Malate	1
+Malate + NAD  <=> Pyruvate + CO2 + NADH	2
+Glyoxylate + Acetyl-CoA <=> Malyl-CoA	1
+Malyl-CoA + H2O <=> Malate + CoA	1

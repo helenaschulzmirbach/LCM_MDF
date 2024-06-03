@@ -1,0 +1,12 @@
+!!!SBtab DocumentName='Pathway Model' SBtabVersion='1.0'	
+!!SBtab TableName='Reaction' TableID='Reaction' TableType='Reaction'  	
+!ReactionFormula	!RelativeFlux
+Acetyl-CoA + Oxaloacetate + H2O <=> Citrate + CoA	1
+citrate <=> cis-aconitate + h2o	1
+cis-aconitate + h2o <=> isocitrate	1
+isocitrate <=> glyoxylate + succinate	1
+succinate + quinone <=> fumarate + Quinol	1
+H2O + Fumarate <=> Malate	1
+malate + nad  <=> oxaloacetate + nadh	1
+Glyoxylate + Acetyl-CoA + H2O <=> Malate + CoA 	1
+Malate + NAD  <=> Pyruvate + CO2 + NADH	1

@@ -1,0 +1,16 @@
+!!!SBtab DocumentName='Pathway Model' SBtabVersion='1.0'	
+!!SBtab TableName='Reaction' TableID='Reaction' TableType='Reaction'  	
+!ReactionFormula	!RelativeFlux
+acetyl-coA + pyruvate + h2o <=> citramalate + coA	1
+citramalate <=> mesaconate + h2o	1
+mesaconate + succinyl-CoA <=> mesaconyl-CoA + succinate	1
+mesaconyl-CoA + h2o <=> beta-methylmalyl-coA	1
+beta-methylmalyl-CoA <=> propionyl-CoA + glyoxylate	1
+Propionyl-CoA + atp + h2o + co2 <=> s-methylmalonyl-CoA + adp + orthophosphate	1
+s-methylmalonyl-CoA <=> r-methylmalonyl-CoA	1
+r-methylmalonyl-CoA <=> succinyl-coA	1
+succinate + quinone <=> fumarate + Quinol	1
+H2O + Fumarate <=> Malate	1
+Malate + NAD  <=> Pyruvate + CO2 + NADH	2
+Glyoxylate + Acetyl-CoA <=> Malyl-CoA	1
+Malyl-CoA + H2O <=> Malate + CoA	1

@@ -1,0 +1,84 @@
+!!!SBtab DocumentName='pathway' SBtabVersion='1.0' Date='2024-4-10'
+!!SBtab TableID='Configuration' TableType='Config' TableName='Configuration' SBtabVersion='1.0'
+!Option	!Value	!Comment
+p_h	7.5 dimensionless	
+p_mg	3.0 dimensionless	
+ionic_strength	0.25 molar	
+temperature	298.15 kelvin	
+
+!!SBtab TableID='Reaction' TableType='Reaction' TableName='Reaction' SBtabVersion='1.0'
+!ID	!ReactionFormula
+R00000	Acetyl_CoA + H2O + Oxaloacetate = Citrate + Coenzyme_A
+R00001	Citrate = Cis_Aconitate + H2O
+R00002	Cis_Aconitate + H2O = threo_isocitric_acid
+R00003	threo_isocitric_acid = Glyoxylate + Succinate
+R00004	14_benzoquinones + Succinate = Fumarate + Hydroquinone
+R00005	Fumarate + H2O = L_Malate
+R00006	L_Malate + Nicotinamide_adenine_dinucleotide = Nicotinamide_adenine_dinucleotide_reduced + Oxaloacetate
+R00007	Acetyl_CoA + Glyoxylate + H2O = Coenzyme_A + L_Malate
+R00008	L_Malate + Nicotinamide_adenine_dinucleotide = CO2 + Nicotinamide_adenine_dinucleotide_reduced + Pyruvate
+
+!!SBtab TableID='Compound' TableType='Compound' TableName='Compound' SBtabVersion='1.0'
+!ID	!Name	!Identifiers
+H2O	H2O	metanetx.chemical:MNXM2
+Nicotinamide_adenine_dinucleotide	Nicotinamide adenine dinucleotide	metanetx.chemical:MNXM8
+Nicotinamide_adenine_dinucleotide_reduced	Nicotinamide adenine dinucleotide - reduced	metanetx.chemical:MNXM10
+Coenzyme_A	Coenzyme A	metanetx.chemical:MNXM12
+CO2	CO2	metanetx.chemical:MNXM13
+Acetyl_CoA	Acetyl-CoA	metanetx.chemical:MNXM21
+Pyruvate	Pyruvate	metanetx.chemical:MNXM23
+Succinate	Succinate	metanetx.chemical:MNXM25
+Oxaloacetate	Oxaloacetate	metanetx.chemical:MNXM46
+Glyoxylate	Glyoxylate	metanetx.chemical:MNXM69
+Fumarate	Fumarate	metanetx.chemical:MNXM93
+L_Malate	L-Malate	metanetx.chemical:MNXM98
+Citrate	Citrate	metanetx.chemical:MNXM131
+threo_isocitric_acid	(+)-threo-isocitric acid	metanetx.chemical:MNXM162
+Hydroquinone	Hydroquinone	metanetx.chemical:MNXM376
+14_benzoquinones	1,4-benzoquinones	metanetx.chemical:MNXM769
+Cis_Aconitate	Cis-Aconitate	metanetx.chemical:MNXM813
+
+!!SBtab TableID='Thermodynamics' TableType='Quantity' TableName='Thermodynamics' SBtabVersion='1.0' StandardConcentration='M'
+!QuantityType	!Reaction	!Compound	!Value	!Unit
+reaction gibbs energy	R00000		-38.76	kJ/mol
+reaction gibbs energy	R00001		8.47	kJ/mol
+reaction gibbs energy	R00002		-0.82	kJ/mol
+reaction gibbs energy	R00003		8.73	kJ/mol
+reaction gibbs energy	R00004		-17.78	kJ/mol
+reaction gibbs energy	R00005		-3.42	kJ/mol
+reaction gibbs energy	R00006		26.50	kJ/mol
+reaction gibbs energy	R00007		-38.65	kJ/mol
+reaction gibbs energy	R00008		12.10	kJ/mol
+
+!!SBtab TableID='ConcentrationConstraint' TableType='Quantity' TableName='ConcentrationConstraint' SBtabVersion='1.0' Unit='mM'
+!QuantityType	!Compound	!Min	!Max
+concentration	H2O	1e+03	1e+03
+concentration	Nicotinamide_adenine_dinucleotide	1	1
+concentration	Nicotinamide_adenine_dinucleotide_reduced	0.1	0.1
+concentration	Coenzyme_A	1	1
+concentration	CO2	0.01	0.01
+concentration	Acetyl_CoA	0.001	10
+concentration	Pyruvate	0.001	10
+concentration	Succinate	0.001	10
+concentration	Oxaloacetate	0.001	10
+concentration	Glyoxylate	0.001	10
+concentration	Fumarate	0.001	10
+concentration	L_Malate	0.001	10
+concentration	Citrate	0.001	10
+concentration	threo_isocitric_acid	0.001	10
+concentration	Hydroquinone	0.001	10
+concentration	14_benzoquinones	0.001	10
+concentration	Cis_Aconitate	0.001	10
+
+!!SBtab TableID='Flux' TableType='Quantity' TableName='Flux' SBtabVersion='1.0' Unit='dimensionless'
+!QuantityType	!Reaction	!Value
+rate of reaction	R00000	1
+rate of reaction	R00001	1
+rate of reaction	R00002	1
+rate of reaction	R00003	1
+rate of reaction	R00004	1
+rate of reaction	R00005	1
+rate of reaction	R00006	1
+rate of reaction	R00007	1
+rate of reaction	R00008	1
+

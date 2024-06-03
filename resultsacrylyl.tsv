@@ -1,0 +1,33 @@
+!!!SBtab DocumentName='report' SBtabVersion='1.0' Date='2024-5-6'
+!!SBtab TableID='Predicted concentrations' TableType='Quantity' TableName='Predicted concentrations' SBtabVersion='1.0' Unit='M'
+!QuantityType	!Compound	!Value
+concentration	ATP	5.000e-03
+concentration	Acetyl_CoA	1.663e-04
+concentration	CO2	1.000e-05
+concentration	H2O	1.000e+00
+concentration	ADP	5.000e-04
+concentration	Malonyl_CoA	4.691e-05
+concentration	Phosphate	1.000e-02
+concentration	Nicotinamide_adenine_dinucleotide_phosphate_reduced	1.000e-04
+concentration	Coenzyme_A	1.000e-03
+concentration	Malonate_semialdehyde	5.042e-05
+concentration	Nicotinamide_adenine_dinucleotide_phosphate	1.000e-05
+concentration	3_Hydroxypropanoate	1.000e-02
+concentration	Lactoyl_CoA	3.295e-05
+concentration	2_hydroxypropanoate	1.000e-06
+concentration	3hpcoa	2.957e-04
+concentration	Acrylyl_CoA	1.030e-04
+concentration	14_benzoquinones	8.854e-06
+concentration	Hydroquinone	1.129e-03
+concentration	Pyruvate	1.129e-03
+
+!!SBtab TableID='Predicted Gibbs energies' TableType='Quantity' TableName='Predicted Gibbs energies' SBtabVersion='1.0' Unit='kJ/mol'
+!QuantityType	!Reaction	!Value
+reaction gibbs energy	R00000	-8.876e+00
+reaction gibbs energy	R00001	-9.801e+00
+reaction gibbs energy	R00002	-1.301e+01
+reaction gibbs energy	R00003	-4.913e+00
+reaction gibbs energy	R00004	-4.913e+00
+reaction gibbs energy	R00005	-4.913e+00
+reaction gibbs energy	R00006	-2.528e+01
+

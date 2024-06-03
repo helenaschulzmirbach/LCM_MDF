@@ -1,0 +1,7 @@
+!!!SBtab DocumentName='Pathway Model' SBtabVersion='1.0'	
+!!SBtab TableName='Reaction' TableID='Reaction' TableType='Reaction'  	
+!ReactionFormula	!RelativeFlux
+acetyl-coA + CO2 + ATP + H2O <=> malonyl-coA + ADP + orthophosphate	1
+Malonyl-CoA + NADPH <=> malonate semialdehyde + coA + NADP	1
+malonate semialdehyde + alpha-alanine <=> pyruvate + beta-alanine	1
+beta-alanine <=> alpha-alanine	1
